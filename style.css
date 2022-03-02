@@ -1,0 +1,128 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    background-color: #8a8986;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+}
+h1{
+    text-align: center;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+#conteiner{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+    color: #eee;
+}
+#ph{
+    text-align: center;
+}
+main{
+    margin: 10px;
+}
+section{
+    background: #222222;
+    margin: 10px;
+    padding: 20px;
+    border: 1px dotted #eee;
+    width: 240px;
+}
+nav{
+    background-color: #1b1b1b;
+    margin: 10px 10px 0px 10px;
+}
+nav ul{
+    margin: 0px;
+    list-style-type: none;
+    padding: 5px 0px 5px 0px;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    display: block;
+    border: 1px solid #eee;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: .5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #e2c2c2;
+    text-transform: uppercase;
+}
+
+a:link,
+a:visited{
+    color: #eee;
+    text-decoration: none;
+}
+a:focus,
+a:hover,
+a:active{
+    color: darksalmon;
+    text-decoration: none;
+}
+footer{
+    background-color: #4e4e4e;
+    text-align: center;
+    padding: 15px;
+    margin: 0px 10px 10px 10px;
+    font-weight: bold;
+    color: #fcfcfc;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
+.social-icons > li{
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+.social-icons a{
+    position: relative;
+    background-color: #eee;
+    display: block;
+    user-select: none;
+    transition: background-color .3 ease-in-out;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: .25rem;
+}
+.social-icons a:hover{
+    background-color: #e0e0e0;
+}
+.social-icons a::before{
+    content: "";
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    left: .65rem;
+    top: .65rem;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+.social-icons .social-icons-fb::before{
+    background-image: url("images/fb.png");
+}
+.social-icons .social-icons-vk::before{
+    background-image: url("images/vk.png");
+}
+.social-icons .social-icons-ytb::before{
+    background-image: url("images/ytb.png");
+}
+.social-icons .social-icons-ok::before{
+    background-image: url("images/ok.png");
+}
+.social-icons .social-icons-inst::before{
+    background-image: url("images/inst.png");
+}
